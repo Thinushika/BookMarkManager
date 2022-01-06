@@ -1,4 +1,4 @@
-import uuidv4 from 'uuidv4'
+import {v1 as uuid} from "uuid";
 import { ADD_BOOKMARK, DELETE_BOOKMARK } from "./types";
 
 // action creators to work with action types
@@ -7,7 +7,7 @@ import { ADD_BOOKMARK, DELETE_BOOKMARK } from "./types";
 export const addBookMark = ({title, url}) => ({
     type: ADD_BOOKMARK,
     payload: {
-        id: uuidv4(), // Universal unique id generator - to generate random id
+        id: uuid(), // Universal unique id generator - to generate random id
         title,
         url
     }
@@ -17,6 +17,6 @@ export const addBookMark = ({title, url}) => ({
 export const deleteBookMark = id => ({
     type: DELETE_BOOKMARK,
     payload: {
-        id: uuidv4(),
+        id: uuid(),
     }
 });
