@@ -1,4 +1,15 @@
 .titleRow {
-    justify-content: center;
-    margin-top: '50px';
+  justify-content: center;
+  margin-top: 50px;
+}
+.footer {
+  text-align: center;
+  z-index: 1;
+}
+.colMain {
+  overflow: auto;
+  height: 450;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
 }
